@@ -149,6 +149,20 @@ h3 {
   margin: 0 8px 15px;
 }
 
+.services-section h2 {
+  margin: 28px auto;
+}
+
+.services-section h3 {
+  margin: 16px auto;
+}
+
+.services-section p {
+  color: #000000;
+  font-size: 1.5em;
+  margin: 0 8px 15px;
+}
+
 /* style on experience section*/
 .experience-section h2 {
   margin: 28px auto;
