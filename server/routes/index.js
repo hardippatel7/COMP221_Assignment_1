@@ -1,28 +1,23 @@
 /* 
 file: routes/index.js
 author: Hardip Patel (301230213)
-date: June 18, 2022
+date: June 3, 2022
    */
 var express = require("express");
 var router = express.Router();
 
 let indexRouteController = require("../controllers/index");
-//GET : endpoints to route to Home
+/* GET home page. */
 router.get("/", indexRouteController.routeToHomePage);
+/* GET home page. */
 router.get("/home", indexRouteController.routeToHomePage);
-//GET : endpoint to route to About Me
+/* GET aboutme page. */
 router.get("/aboutme", indexRouteController.routeToAboutMe);
-//GET : endpoint to route to Projects
+/* GET projects page. */
 router.get("/projects", indexRouteController.routeToProjects);
-//GET : endpoint to route to Services
+/* GET services page. */
 router.get("/services", indexRouteController.routeToServices);
-//GET : endpoint to route to Contact Me
+/* GET contact page. */
 router.get("/contactme", indexRouteController.routeToContactMe);
-
-//GET : endpoints to route to Logib
-router.get("/login", indexRouteController.displayLoginPage);
-router.post("/login", indexRouteController.processLoginPage);
-//GET : endpoint to route to Logout
-router.get("/logout", indexRouteController.processLogout);
 
 module.exports = router;
